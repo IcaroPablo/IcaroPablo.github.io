@@ -1,0 +1,127 @@
+#!/usr/bin/mksh
+# Script by Ypnose - http://ywstd.fr
+set -e
+
+WSH_BASEDIR="$1"
+WSH_CSS="0"
+WSH_COPY="0"
+
+function p_err {
+	print -ru2 -- "$1"
+	exit 1
+}
+
+function get_config {
+	if [[ ! -r ${WSH_BASEDIR}/wswsh.conf ]]; then
+		p_err "Missing wswsh.conf in $WSH_BASEDIR"
+	fi
+	. "${WSH_BASEDIR}/wswsh.conf"
+	# NOT FINAL (SYMLINKS?)...
+	if [[ -f ${WSH_BASEDIR}/includes/layout ]]; then
+		. "${WSH_BASEDIR}/includes/layout"
+	fi
+}
+
+function get_recdirs {
+	typeset WSH_DESTDIR
+
+	if [[ ! -d ${WSH_BASEDIR}/src ]]; then
+		p_err "src directory is missing"
+	fi
+	# Create src/ hierarchy in dest/
+	( cd "${WSH_BASEDIR}/src"; find . -type d ) | while IFS= read -r WSH_DESTDIR; do
+		mkdir -p "${WSH_BASEDIR}/dest/${WSH_DESTDIR#*/}"
+	done
+}
+
+function define_regex {
+	# Extensible part...
+	case $WSH_INTERP in
+		ahrf*)
+			WSH_PATTERN="^[\t ]*:"
+			WSH_REGEX="^[\t ]*:[\t ]*|[\t ]*:[\t ]*$"
+			;;
+		*)
+			WSH_PATTERN="<h1>"
+			WSH_REGEX="^[\t ]*<h1>[\t ]*|[\t ]*<\/h1>.*$"
+			;;
+	esac
+}
+
+function run_hook {
+	# Run hooks before & after generating the page
+	# Hooks can use all variables defined inside wswsh
+	typeset WSH_HOOK
+
+	WSH_HOOK="$1"
+	if [[ -f ${WSH_BASEDIR}/includes/${WSH_HOOK} ]]; then
+		. "${WSH_BASEDIR}/includes/${WSH_HOOK}"
+	fi
+}
+
+function gen_page {
+	typeset WSH_GENFILE WSH_GENFILE_NOSRC WSH_GENFILE_FINAL WSH_GENFILE_TITLE
+
+	if [[ -n $WSH_INTERP && ! -x $(whence -p $WSH_INTERP) ]]; then
+		p_err "$WSH_INTERP not found in PATH"
+	fi
+
+	if [[ -n $WSH_CSSFILE && -r ${WSH_BASEDIR}/src/${WSH_CSSFILE} ]]; then
+		# WSH_CSS variable can be used in layout to trigger actions
+		WSH_CSS="1"
+		cp -a "${WSH_BASEDIR}/src/${WSH_CSSFILE}" "${WSH_BASEDIR}/dest/${WSH_CSSFILE}"
+	fi
+
+	# Define the regexes
+	define_regex
+
+	cd "$WSH_BASEDIR"
+	find src -type f -iname "*.${WSH_EXT:-txt}" | while IFS= read -r WSH_GENFILE; do
+		WSH_GENFILE_NOSRC="${WSH_GENFILE#*/}"
+		WSH_GENFILE_FINAL="dest/${WSH_GENFILE_NOSRC%%.*}.html"
+		# WSH_GENFILE_TITLE can be used in layout
+		WSH_GENFILE_TITLE="$(awk '/'"$WSH_PATTERN"'/{gsub(/'"$WSH_REGEX"'/,"");print $0;exit}' "$WSH_GENFILE")"
+
+		run_hook pre_genpage
+		page_header >"$WSH_GENFILE_FINAL"
+		run_hook post_header
+		if ! "${WSH_INTERP:-cat}" "$WSH_GENFILE" >>"$WSH_GENFILE_FINAL"; then
+			p_err "Generating $WSH_GENFILE failed"
+		fi
+		run_hook pre_footer
+		page_footer >>"$WSH_GENFILE_FINAL"
+		run_hook post_genpage
+
+		if (( WSH_COPY == 1 )); then
+			cp -a "src/${WSH_GENFILE_NOSRC}" "dest/${WSH_GENFILE_NOSRC}"
+		fi
+	done
+}
+
+function copy_html {
+	typeset WSH_HTML
+
+	# We copy existing *.html files from src to dest.
+	find "src" -type f -iname "*.html" | while IFS= read -r WSH_HTML; do
+		if [[ -f dest/${WSH_HTML#*/} ]]; then
+			print "dest/${WSH_HTML#*/} already exists"
+			continue
+		fi
+		cp -a -- "$WSH_HTML" "dest/${WSH_HTML#*/}"
+	done
+}
+
+if [[ -z $1 || $1 = "-h" ]]; then
+	print "usage: ${0##*/} [DIR]"
+	exit
+fi
+
+get_config
+get_recdirs
+gen_page
+copy_html
+
+WSH_TOT="$(find "${WSH_BASEDIR}/dest" -type f | wc -l)"
+print "Generated $WSH_TOT file(s) in ${WSH_BASEDIR}/dest"
+
+exit

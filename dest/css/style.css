@@ -1,0 +1,23 @@
+@media only screen {
+  body {
+    background: #111;
+    color: #eee;
+    font-family: sans-serif;
+    margin: 10px auto 10px auto;
+    max-width: 800px;
+    padding: 0 10px 0 10px;}
+  h1, h2 {
+    background: #222;
+    font-weight: normal;
+    padding: 4px;}
+  a {
+    color: #0f7;
+    text-decoration: none;}
+  a:hover,  a:active {
+    background: #0f7;
+    color: #000;}
+  li {
+    list-style-type: none;}
+  blockquote {
+    border-left: 4px solid #0f7;
+    padding-left: 6px;}}

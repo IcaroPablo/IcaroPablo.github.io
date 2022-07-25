@@ -1,7 +1,8 @@
     <div align="center">
         <code>
             <pre>
-Be my guest in this tiny and shady corner of the internet made by the zombie cells of...
+Be my guest in this tiny and shady corner of the internet made by the zombie cells of...</pre>
+<pre style="color:#ff8b00;">
                           __                     __      __                                   
                          /\ \                   /\ \    /\ \                    __            
   ___ ___   __  __       \_\ \     __     __    \_\ \   \ \ \____  _ __    __  /\_\    ___    
@@ -12,6 +13,7 @@ Be my guest in this tiny and shady corner of the internet made by the zombie cel
                 /\___/                                                                        
                 \/__/                                                                         
             </pre>
+            <pre>Here you will find some of my thoughts about computer related stuff and whatnot</pre>
         </code>
     </div>
     <div>

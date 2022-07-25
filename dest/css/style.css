@@ -1,7 +1,7 @@
 @media only screen {
   body {
     background: #111;
-    color: #ddd;
+    color: #aaa;
     font-family: sans-serif;
     margin: 10px auto 10px auto;
     max-width: 800px;
@@ -29,10 +29,10 @@
   span.toright { float:right; }
   span.toleft { float:left; }
   a {
-    color: #0f7;
+    color: #ff8b00;
     text-decoration: none;}
   a:hover,  a:active {
-    background: #0f7;
+    background: #ff8b00;
     color: #000;}
   li {
     list-style-type: none;}

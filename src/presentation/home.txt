@@ -24,7 +24,8 @@ Be my guest in this tiny and shady corner of the internet made by the zombie cel
 	    <li>
 	    	<div>
 		    <br>
-		    [<a href="">delusion Nº 3</a>]
+		    [<a href="">Delusion #3 - title 3</a>] aaaa-mm-dd
+		    <p style="color:#ffbf00">tag1, tag2, tag3</p>
 		    <p>
 		    	short summary bla bla bla
 		    </p>
@@ -33,7 +34,8 @@ Be my guest in this tiny and shady corner of the internet made by the zombie cel
 	    <li>
 	    	<div>
 		    <br>
-		    [<a href="">delusion Nº 2</a>]
+		    [<a href="">Delusion #2 - Title 2</a>] aaaa-mm-dd
+		    <p style="color:#ffbf00">tag1, tag2, tag3</p>
 		    <p>
 		    	short summary bla bla bla
 		    </p>
@@ -42,7 +44,8 @@ Be my guest in this tiny and shady corner of the internet made by the zombie cel
 	    <li>
 	    	<div>
 		    <br>
-		    [<a href="">delusion Nº 1</a>]
+		    [<a href="">Delusion #1 - Title 1</a>] aaaa-mm-dd
+		    <p style="color:#ffbf00">tag1, tag2, tag3</p>
 		    <p>
 		    	short summary bla bla bla
 		    </p>

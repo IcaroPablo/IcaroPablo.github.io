@@ -18,6 +18,8 @@ Be my guest in this tiny and shady corner of the internet made by the zombie cel
     </div>
     <div>
 	<hr>
+	    Recent posts:
+	    <hr>
     	<ul>
 	    <li>
 	    	<div>
@@ -47,5 +49,16 @@ Be my guest in this tiny and shady corner of the internet made by the zombie cel
 	        </div>
 	    </li>
 	</ul>
+    </div>
+    <br><hr>
+    Good old 88x33 buttons
+    <hr><br>
+    <div align="center">
+        <img src="../../includes/buttons/darkrabbithole.gif">
+        <img src="../../includes/buttons/piracy.gif">
+        <img src="../../includes/buttons/hatemac.gif">
+        <img src="../../includes/buttons/sugoiboton.gif">
+        <img src="../../includes/buttons/vim.vialle.love.anim.gif">
+        <img src="../../includes/buttons/phonechump.gif" alt="phonechump" height="31" width="88">
     </div>
 

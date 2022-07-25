@@ -1,15 +1,33 @@
 @media only screen {
   body {
     background: #111;
-    color: #eee;
+    color: #ddd;
     font-family: sans-serif;
     margin: 10px auto 10px auto;
     max-width: 800px;
     padding: 0 10px 0 10px;}
-  h1, h2 {
+  hr {
+    border: 0;
+    border-bottom: 0;
+    border-top: 1px solid #888;}
+  div.new1 {
     background: #222;
     font-weight: normal;
     padding: 4px;}
+  h4 {
+    width: 100%; 
+    text-align: left; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    line-color: #888;
+    margin: 10px 0 20px;} 
+  h4 span { 
+    background:#111;}
+  div.new2 {
+    height: 22px;
+    line-height: 22px;}
+  span.toright { float:right; }
+  span.toleft { float:left; }
   a {
     color: #0f7;
     text-decoration: none;}

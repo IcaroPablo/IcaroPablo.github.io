@@ -54,7 +54,7 @@ Be my guest in this tiny and shady corner of the internet made by the zombie cel
 	</ul>
     </div>
     <br><hr>
-    Good old 88x33 buttons (click them and meet my friends!)
+    Good old 88x31 buttons (click them and meet my friends!)
     <hr><br>
     <div align="center">
         <a href="http://kamuridesu.tech" target="blank_"><img src="../../includes/buttons/darkrabbithole.gif"></a>
@@ -63,5 +63,7 @@ Be my guest in this tiny and shady corner of the internet made by the zombie cel
         <img src="../../includes/buttons/sugoiboton.gif">
         <img src="../../includes/buttons/vim.vialle.love.anim.gif">
         <a href="http://glassnerves.sdf.org/" target="blank_"><img src="../../includes/buttons/phonechump.gif" alt="phonechump" height="31" width="88"></a>
+        <img src="../../includes/buttons/fuckingwebmaster.gif">
+        <img src="../../includes/buttons/lain_green.gif">
     </div>
 

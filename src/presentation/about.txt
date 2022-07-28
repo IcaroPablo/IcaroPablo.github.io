@@ -1,78 +1,24 @@
     <div>
-        <img width="290" height="160" src="https://media.giphy.com/media/9B8wYztAoe1zO/source.gif" align=left>
-
-        <code>
-	    <pre>
-[icaropablo@github ~]$ neofetch
-	    </pre>
-	</code>
-        <code>
-	    <pre>
-icaropablo@github
------------------
-- Academic Degree: Pursuing electrical engineering bachelor&#39;s
-- Works with: Software development
-- Hobby: Free and open source enthusiastic
-- Interested in: practically anything related to Computer Science
-(from operational systems to computational intelligence)
-- Currently learning: full stack web development
-	    </pre>
-	</code>
-    </div>
-    <div>
-        <code>
-	    <pre>
-[icaropablo@github ~]$ ./show_my_tech_stack.sh &amp;&amp; cat message.txt
-	    </pre>
-	</code>
-
-        <img src="https://img.shields.io/badge/-HTML5-black?style=flat-square&amp;logo=html5" alt="HTML">
-        <img src="https://img.shields.io/badge/-CSS3-black?style=flat-square&amp;logo=css3" alt="CSS">
-        <img src="https://img.shields.io/badge/-Java-black?style=flat-square&amp;logo=java&amp;logoColor=red" alt="Java">
-        <img src="https://img.shields.io/badge/-Python-black?style=flat-square&amp;logo=python" alt="Python">
-        <img src="https://img.shields.io/badge/-Git-black?style=flat-square&amp;logo=git" alt="Git">
-        <img src="https://img.shields.io/badge/-Eclipse-black?style=flat-square&amp;logo=Eclipse" alt="Eclipse">
-        <img src="https://img.shields.io/badge/-IntelliJ%20IDEA-black?style=flat-square&amp;logo=intellijidea" alt="IntelliJ IDEA">
-        <img src="https://img.shields.io/badge/-PostgreSQL-black?style=flat-square&amp;logo=postgresql&amp;logoColor=blue" alt="Postgres">
-        <img src="https://img.shields.io/badge/-Ubuntu-black?style=flat-square&amp;logo=ubuntu" alt="Ubuntu">
-        <img src="https://img.shields.io/badge/-Manjaro-black?style=flat-square&amp;logo=manjaro" alt="Manjaro">
-        <img src="https://img.shields.io/badge/-Spring-black?style=flat-square&amp;logo=Spring" alt="Spring">
-    </div>
-    <div>
-        <code>
-	    <pre>
-[icaropablo@github ~]$ figlet &quot;get in touch !&quot;
-	    </pre>
-	</code>
-        <code>
-	    <pre>
+        <p>Hello there! I'm the very creator of this <del>enormous pit of deception</del> website :) </p>
+	</div>
+	<center><img src="../../includes/artifact.gif" height="220" width="430"></center>
+	<hr>
+	<div>
+	    <p> What's there to say ? I'm a normal guy from Brazil that likes tinkering with software here and there, casually making little projects like this one, in fact I'm a software developer interested in old, simple and elegant stuff.</p>
+	<center><img src="../../includes/celestial-titans-pixel-art.gif" height="220" width="430"></center>
+	    <p>I tend to use free software alternatives whenever I can and I'm also a retrogames and retrocomputing enjoyer so, if you want to make me any sugestion on what to play next in my not-so-old Nintendo 3ds (that I actually use to play GBA games), feel free to <a href="mailto:ic4ro.p4blo@gmail.com" target="_blank">mail me</a>.<p>
+	</div>
+	<hr>
+    <div align="center">
+	    <pre style="color:#ff8b00;">
             _     _         _                   _       _
   __ _  ___| |_  (_)_ __   | |_ ___  _   _  ___| |__   | |
  / _` |/ _ \ __| | | &#39;_ \  | __/ _ \| | | |/ __| &#39;_ \  | |
 | (_| |  __/ |_  | | | | | | || (_) | |_| | (__| | | | |_|
  \__, |\___|\__| |_|_| |_|  \__\___/ \__,_|\___|_| |_| (_)
- |___/
-            <pre>
-	</code>
+ |___/                                                    
+        <pre>
     </div>
-    <div>
-	<!-- https://shields.io/ -->
-	<a href="https://www.linkedin.com/in/%C3%ADcaro-andrade-9543bb163/" target="_blank">
-	    <img src="https://img.shields.io/badge/Linkedin-Ícaro%20Pablo-blue?style=flat-square&logo=linkedin">
-	</a>
-	<a href="mailto:ic4ro.p4blo@gmail.com" target="_blank">
-	    <img src="https://img.shields.io/badge/Email-ic4ro.p4blo%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white">
-	</a>
-	<a href="https://www.instagram.com/icaro.pablo/" target="_blank">
-	    <img src="https://img.shields.io/badge/Instagram-icaro.pablo-purple?style=flat-square&logo=Instagram&logoColor=white">
-	</a>
-	<a href="https://www.hackerrank.com/ic4ro_p4blo" target="_blank">
-	    <img src="https://img.shields.io/badge/Hacker_Rank-ic4ro__p4blo-green?style=flat-square&logo=HackerRank&logoColor=while">
-	</a>
-	<a href="https://app.codesignal.com/profile/ic4ro_p4blo" target="_blank">
-	    <img src="https://img.shields.io/badge/Code_Signal-ic4ro__p4blo-cyan?style=flat-square&logo=CodeSignal&logoColor=while">
-	</a>
-	<a href="https://leetcode.com/user7876H/" target="_blank">
-	    <img src="https://img.shields.io/badge/Leet_Code-user7876H-yellow?style=flat-square&logo=LeetCode&logoColor=while">
-	</a>
+    <div align="center">
+	    <p>You can find my resume here in <a href="https://read.cv/icaro.andrade" target="blank_">read.cv</a> or you can reach me on <a href="https://www.linkedin.com/in/icaro-p-o-andrade/" target="blank_">Linkedin</a> too (profile only in portuguese for now, but I'll work on it).<p>
     </div>

@@ -2,7 +2,6 @@
         <p>Hello there! I'm the very creator of this <del>enormous pit of deception</del> website :) </p>
 	</div>
 	<center><img src="../../includes/artifact.gif" height="220" width="430"></center>
-	<hr>
 	<div>
 	    <p> What's there to say ? I'm a normal guy from Brazil that likes tinkering with software here and there, casually making little projects like this one, in fact I'm a software developer interested in old, simple and elegant stuff.</p>
 	<center><img src="../../includes/celestial-titans-pixel-art.gif" height="220" width="430"></center>
@@ -11,7 +10,7 @@
 	<hr>
     <div align="center">
 	    <pre style="color:#ff8b00;">
-            _     _         _                   _       _
+            _     _         _                   _       _ 
   __ _  ___| |_  (_)_ __   | |_ ___  _   _  ___| |__   | |
  / _` |/ _ \ __| | | &#39;_ \  | __/ _ \| | | |/ __| &#39;_ \  | |
 | (_| |  __/ |_  | | | | | | || (_) | |_| | (__| | | | |_|
@@ -20,5 +19,5 @@
         <pre>
     </div>
     <div align="center">
-	    <p>You can find my resume here in <a href="https://read.cv/icaro.andrade" target="blank_">read.cv</a> or you can reach me on <a href="https://www.linkedin.com/in/icaro-p-o-andrade/" target="blank_">Linkedin</a> too (profile only in portuguese for now, but I'll work on it).<p>
+	    <p>You can find my resume here in <a href="https://read.cv/icaro.andrade" target="blank_">read.cv</a> or you can reach me on <a href="https://www.linkedin.com/in/icaro-p-o-andrade/" target="blank_">Linkedin</a> too (profile only in portuguese for now, but I'll work on it), also check my <a href="https://github.com/IcaroPablo" target="blank_">github</a>.<p>
     </div>

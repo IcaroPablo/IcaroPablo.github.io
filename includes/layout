@@ -21,9 +21,10 @@ function page_header {
         print -r -- "<div class=\"new2\"><span class=\"toleft\"><code>Icaro's website</code></span>"
         print -r -- "<span class=\"toright\"><code>"
         print -r -- "<a href=\"${HOME}\">Home</a> &emsp;"
+        print -r -- "<a href=\"${POSTS}\">Posts</a> &emsp;"
         print -r -- "<a href=\"${ABOUT}\">About</a> &emsp;"
-        print -r -- "<a href=\"${SOURCE}\">Source</a> &emsp;"
-	    print -r -- "<a href=\"${SEEALSO}\">See Also</a></code>"
+	    print -r -- "<a href=\"${ROCKS}\">Rocks</a> &emsp;"
+        print -r -- "<a href=\"${SOURCE}\" target="blank_">Source</a></code>"
     print -r -- '</span>'
     print -r -- "</div>"
     print -r -- '<hr>'
